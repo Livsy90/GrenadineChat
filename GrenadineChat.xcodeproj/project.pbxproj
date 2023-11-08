@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6A6E3E82AFBFE63000C823B /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3E72AFBFE63000C823B /* StreamChatSwiftUI */; };
+		D6A6E3EB2AFBFECD000C823B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3EA2AFBFECD000C823B /* FirebaseAnalytics */; };
+		D6A6E3ED2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3EC2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion */; };
+		D6A6E3EF2AFBFECD000C823B /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3EE2AFBFECD000C823B /* FirebaseAnalyticsSwift */; };
+		D6A6E3F12AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3F02AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		D6A6E3F32AFBFECE000C823B /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3F22AFBFECE000C823B /* FirebaseAppCheck */; };
 		D6ACFD422AFBFB5E0055F639 /* GrenadineChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD412AFBFB5E0055F639 /* GrenadineChatApp.swift */; };
 		D6ACFD442AFBFB5E0055F639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD432AFBFB5E0055F639 /* ContentView.swift */; };
 		D6ACFD462AFBFB600055F639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACFD452AFBFB600055F639 /* Assets.xcassets */; };
@@ -26,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6A6E3EF2AFBFECD000C823B /* FirebaseAnalyticsSwift in Frameworks */,
+				D6A6E3F12AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				D6A6E3EB2AFBFECD000C823B /* FirebaseAnalytics in Frameworks */,
+				D6A6E3ED2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D6A6E3F32AFBFECE000C823B /* FirebaseAppCheck in Frameworks */,
+				D6A6E3E82AFBFE63000C823B /* StreamChatSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,14 @@
 			dependencies = (
 			);
 			name = GrenadineChat;
+			packageProductDependencies = (
+				D6A6E3E72AFBFE63000C823B /* StreamChatSwiftUI */,
+				D6A6E3EA2AFBFECD000C823B /* FirebaseAnalytics */,
+				D6A6E3EC2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion */,
+				D6A6E3EE2AFBFECD000C823B /* FirebaseAnalyticsSwift */,
+				D6A6E3F02AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport */,
+				D6A6E3F22AFBFECE000C823B /* FirebaseAppCheck */,
+			);
 			productName = GrenadineChat;
 			productReference = D6ACFD3E2AFBFB5E0055F639 /* GrenadineChat.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = D6ACFD352AFBFB5E0055F639;
+			packageReferences = (
+				D6A6E3E62AFBFE63000C823B /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+				D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D6ACFD3F2AFBFB5E0055F639 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +366,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6A6E3E62AFBFE63000C823B /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.41.0;
+			};
+		};
+		D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6A6E3E72AFBFE63000C823B /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E62AFBFE63000C823B /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+		D6A6E3EA2AFBFECD000C823B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D6A6E3EC2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		D6A6E3EE2AFBFECD000C823B /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		D6A6E3F02AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		D6A6E3F22AFBFECE000C823B /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D6ACFD362AFBFB5E0055F639 /* Project object */;
 }
