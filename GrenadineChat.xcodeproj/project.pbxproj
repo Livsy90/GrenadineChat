@@ -17,6 +17,13 @@
 		D6ACFD442AFBFB5E0055F639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD432AFBFB5E0055F639 /* ContentView.swift */; };
 		D6ACFD462AFBFB600055F639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACFD452AFBFB600055F639 /* Assets.xcassets */; };
 		D6ACFD492AFBFB600055F639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACFD482AFBFB600055F639 /* Preview Assets.xcassets */; };
+		D6DBE81B2AFD0C7A00EAC47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */; };
+		D6DBE81E2AFD0DEB00EAC47A /* ChatClient+shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE81D2AFD0DEB00EAC47A /* ChatClient+shared.swift */; };
+		D6DBE8202AFD0EA300EAC47A /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE81F2AFD0EA300EAC47A /* AppConfigurator.swift */; };
+		D6DBE8222AFD111F00EAC47A /* StreamChatFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8212AFD111F00EAC47A /* StreamChatFactory.swift */; };
+		D6DBE8242AFD144E00EAC47A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8232AFD144E00EAC47A /* AuthManager.swift */; };
+		D6DBE8272AFD14AA00EAC47A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D6DBE8262AFD14AA00EAC47A /* FirebaseAuth */; };
+		D6DBE82C2AFD186100EAC47A /* ChatClient+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE82B2AFD186100EAC47A /* ChatClient+User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +32,12 @@
 		D6ACFD432AFBFB5E0055F639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6ACFD452AFBFB600055F639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6ACFD482AFBFB600055F639 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6DBE81D2AFD0DEB00EAC47A /* ChatClient+shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatClient+shared.swift"; sourceTree = "<group>"; };
+		D6DBE81F2AFD0EA300EAC47A /* AppConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
+		D6DBE8212AFD111F00EAC47A /* StreamChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChatFactory.swift; sourceTree = "<group>"; };
+		D6DBE8232AFD144E00EAC47A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D6DBE82B2AFD186100EAC47A /* ChatClient+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatClient+User.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +50,7 @@
 				D6A6E3EB2AFBFECD000C823B /* FirebaseAnalytics in Frameworks */,
 				D6A6E3ED2AFBFECD000C823B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				D6A6E3F32AFBFECE000C823B /* FirebaseAppCheck in Frameworks */,
+				D6DBE8272AFD14AA00EAC47A /* FirebaseAuth in Frameworks */,
 				D6A6E3E82AFBFE63000C823B /* StreamChatSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +63,7 @@
 			children = (
 				D6ACFD402AFBFB5E0055F639 /* GrenadineChat */,
 				D6ACFD3F2AFBFB5E0055F639 /* Products */,
+				D6DBE8252AFD14AA00EAC47A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,10 +78,12 @@
 		D6ACFD402AFBFB5E0055F639 /* GrenadineChat */ = {
 			isa = PBXGroup;
 			children = (
+				D6DBE81C2AFD0DD600EAC47A /* Helpers */,
 				D6ACFD412AFBFB5E0055F639 /* GrenadineChatApp.swift */,
 				D6ACFD432AFBFB5E0055F639 /* ContentView.swift */,
 				D6ACFD452AFBFB600055F639 /* Assets.xcassets */,
 				D6ACFD472AFBFB600055F639 /* Preview Content */,
+				D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */,
 			);
 			path = GrenadineChat;
 			sourceTree = "<group>";
@@ -77,6 +94,57 @@
 				D6ACFD482AFBFB600055F639 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6DBE81C2AFD0DD600EAC47A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE82F2AFD18F700EAC47A /* Factories */,
+				D6DBE82E2AFD18E300EAC47A /* Configurators */,
+				D6DBE82D2AFD18CD00EAC47A /* ChatClient */,
+				D6DBE8282AFD14CF00EAC47A /* Auth */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D6DBE8252AFD14AA00EAC47A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6DBE8282AFD14CF00EAC47A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE8232AFD144E00EAC47A /* AuthManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		D6DBE82D2AFD18CD00EAC47A /* ChatClient */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE81D2AFD0DEB00EAC47A /* ChatClient+shared.swift */,
+				D6DBE82B2AFD186100EAC47A /* ChatClient+User.swift */,
+			);
+			path = ChatClient;
+			sourceTree = "<group>";
+		};
+		D6DBE82E2AFD18E300EAC47A /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE81F2AFD0EA300EAC47A /* AppConfigurator.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		D6DBE82F2AFD18F700EAC47A /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE8212AFD111F00EAC47A /* StreamChatFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +170,7 @@
 				D6A6E3EE2AFBFECD000C823B /* FirebaseAnalyticsSwift */,
 				D6A6E3F02AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport */,
 				D6A6E3F22AFBFECE000C823B /* FirebaseAppCheck */,
+				D6DBE8262AFD14AA00EAC47A /* FirebaseAuth */,
 			);
 			productName = GrenadineChat;
 			productReference = D6ACFD3E2AFBFB5E0055F639 /* GrenadineChat.app */;
@@ -161,8 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DBE8202AFD0EA300EAC47A /* AppConfigurator.swift in Sources */,
+				D6DBE82C2AFD186100EAC47A /* ChatClient+User.swift in Sources */,
+				D6DBE81B2AFD0C7A00EAC47A /* AppDelegate.swift in Sources */,
+				D6DBE8242AFD144E00EAC47A /* AuthManager.swift in Sources */,
+				D6DBE8222AFD111F00EAC47A /* StreamChatFactory.swift in Sources */,
 				D6ACFD442AFBFB5E0055F639 /* ContentView.swift in Sources */,
 				D6ACFD422AFBFB5E0055F639 /* GrenadineChatApp.swift in Sources */,
+				D6DBE81E2AFD0DEB00EAC47A /* ChatClient+shared.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +491,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAppCheck;
+		};
+		D6DBE8262AFD14AA00EAC47A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6A6E3E92AFBFECD000C823B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
