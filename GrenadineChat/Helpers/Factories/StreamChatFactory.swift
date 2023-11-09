@@ -16,7 +16,7 @@ enum StreamChatFactory {
         static let minimumSwipeGestureDistance: CGFloat = 50
     }
     
-    static func streamChat() -> StreamChat {
+    static func makeStreamChat() -> StreamChat {
         StreamChat(
             chatClient: ChatClient.shared,
             utils: Utils(messageListConfig: messageListConfig())

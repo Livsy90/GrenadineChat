@@ -14,7 +14,7 @@
 		D6A6E3F12AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3F02AFBFECE000C823B /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		D6A6E3F32AFBFECE000C823B /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = D6A6E3F22AFBFECE000C823B /* FirebaseAppCheck */; };
 		D6ACFD422AFBFB5E0055F639 /* GrenadineChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD412AFBFB5E0055F639 /* GrenadineChatApp.swift */; };
-		D6ACFD442AFBFB5E0055F639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD432AFBFB5E0055F639 /* ContentView.swift */; };
+		D6ACFD442AFBFB5E0055F639 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACFD432AFBFB5E0055F639 /* TabBarView.swift */; };
 		D6ACFD462AFBFB600055F639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACFD452AFBFB600055F639 /* Assets.xcassets */; };
 		D6ACFD492AFBFB600055F639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ACFD482AFBFB600055F639 /* Preview Assets.xcassets */; };
 		D6DBE81B2AFD0C7A00EAC47A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */; };
@@ -24,12 +24,27 @@
 		D6DBE8242AFD144E00EAC47A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8232AFD144E00EAC47A /* AuthManager.swift */; };
 		D6DBE8272AFD14AA00EAC47A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D6DBE8262AFD14AA00EAC47A /* FirebaseAuth */; };
 		D6DBE82C2AFD186100EAC47A /* ChatClient+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE82B2AFD186100EAC47A /* ChatClient+User.swift */; };
+		D6DBE8342AFD263C00EAC47A /* StreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8332AFD263C00EAC47A /* StreamViewModel.swift */; };
+		D6DBE8372AFD266B00EAC47A /* FileManager+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8362AFD266B00EAC47A /* FileManager+Adds.swift */; };
+		D6DBE8392AFD26ED00EAC47A /* Collections+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8382AFD26ED00EAC47A /* Collections+Safe.swift */; };
+		D6DBE83C2AFD274300EAC47A /* FileExtensionKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE83B2AFD274300EAC47A /* FileExtensionKind.swift */; };
+		D6DBE8402AFD2F7400EAC47A /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE83F2AFD2F7400EAC47A /* ChannelListView.swift */; };
+		D6DBE8422AFD307200EAC47A /* GrenadineViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8412AFD307200EAC47A /* GrenadineViewModelFactory.swift */; };
+		D6DBE8442AFD32CF00EAC47A /* StreamViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8432AFD32CF00EAC47A /* StreamViewFactory.swift */; };
+		D6DBE8472AFD33C300EAC47A /* CircleImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8462AFD33C300EAC47A /* CircleImageModifier.swift */; };
+		D6DBE8492AFD356000EAC47A /* SearchUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8482AFD356000EAC47A /* SearchUsersView.swift */; };
+		D6DBE84B2AFD35A000EAC47A /* CreateNewGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE84A2AFD35A000EAC47A /* CreateNewGroupView.swift */; };
+		D6DBE84D2AFD360800EAC47A /* NewGroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE84C2AFD360800EAC47A /* NewGroupListView.swift */; };
+		D6DBE84F2AFD39A500EAC47A /* CreateNewGroupHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE84E2AFD39A500EAC47A /* CreateNewGroupHeader.swift */; };
+		D6DBE8512AFD39FE00EAC47A /* DirectChatChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8502AFD39FE00EAC47A /* DirectChatChannelView.swift */; };
+		D6DBE8532AFD3ED500EAC47A /* SearchUsersResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8522AFD3ED500EAC47A /* SearchUsersResultsView.swift */; };
+		D6DBE8552AFD3F1300EAC47A /* Date+Adds.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DBE8542AFD3F1300EAC47A /* Date+Adds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D6ACFD3E2AFBFB5E0055F639 /* GrenadineChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrenadineChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ACFD412AFBFB5E0055F639 /* GrenadineChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrenadineChatApp.swift; sourceTree = "<group>"; };
-		D6ACFD432AFBFB5E0055F639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D6ACFD432AFBFB5E0055F639 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		D6ACFD452AFBFB600055F639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6ACFD482AFBFB600055F639 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +53,21 @@
 		D6DBE8212AFD111F00EAC47A /* StreamChatFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChatFactory.swift; sourceTree = "<group>"; };
 		D6DBE8232AFD144E00EAC47A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		D6DBE82B2AFD186100EAC47A /* ChatClient+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatClient+User.swift"; sourceTree = "<group>"; };
+		D6DBE8332AFD263C00EAC47A /* StreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewModel.swift; sourceTree = "<group>"; };
+		D6DBE8362AFD266B00EAC47A /* FileManager+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Adds.swift"; sourceTree = "<group>"; };
+		D6DBE8382AFD26ED00EAC47A /* Collections+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Safe.swift"; sourceTree = "<group>"; };
+		D6DBE83B2AFD274300EAC47A /* FileExtensionKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileExtensionKind.swift; sourceTree = "<group>"; };
+		D6DBE83F2AFD2F7400EAC47A /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		D6DBE8412AFD307200EAC47A /* GrenadineViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrenadineViewModelFactory.swift; sourceTree = "<group>"; };
+		D6DBE8432AFD32CF00EAC47A /* StreamViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewFactory.swift; sourceTree = "<group>"; };
+		D6DBE8462AFD33C300EAC47A /* CircleImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageModifier.swift; sourceTree = "<group>"; };
+		D6DBE8482AFD356000EAC47A /* SearchUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersView.swift; sourceTree = "<group>"; };
+		D6DBE84A2AFD35A000EAC47A /* CreateNewGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGroupView.swift; sourceTree = "<group>"; };
+		D6DBE84C2AFD360800EAC47A /* NewGroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupListView.swift; sourceTree = "<group>"; };
+		D6DBE84E2AFD39A500EAC47A /* CreateNewGroupHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewGroupHeader.swift; sourceTree = "<group>"; };
+		D6DBE8502AFD39FE00EAC47A /* DirectChatChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectChatChannelView.swift; sourceTree = "<group>"; };
+		D6DBE8522AFD3ED500EAC47A /* SearchUsersResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUsersResultsView.swift; sourceTree = "<group>"; };
+		D6DBE8542AFD3F1300EAC47A /* Date+Adds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Adds.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +108,11 @@
 		D6ACFD402AFBFB5E0055F639 /* GrenadineChat */ = {
 			isa = PBXGroup;
 			children = (
+				D6DBE83A2AFD273800EAC47A /* Models */,
+				D6DBE8352AFD265B00EAC47A /* Extensions */,
+				D6DBE8302AFD261B00EAC47A /* Flows */,
 				D6DBE81C2AFD0DD600EAC47A /* Helpers */,
 				D6ACFD412AFBFB5E0055F639 /* GrenadineChatApp.swift */,
-				D6ACFD432AFBFB5E0055F639 /* ContentView.swift */,
 				D6ACFD452AFBFB600055F639 /* Assets.xcassets */,
 				D6ACFD472AFBFB600055F639 /* Preview Content */,
 				D6DBE81A2AFD0C7A00EAC47A /* AppDelegate.swift */,
@@ -99,6 +131,7 @@
 		D6DBE81C2AFD0DD600EAC47A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D6DBE8452AFD33BB00EAC47A /* Modifiers */,
 				D6DBE82F2AFD18F700EAC47A /* Factories */,
 				D6DBE82E2AFD18E300EAC47A /* Configurators */,
 				D6DBE82D2AFD18CD00EAC47A /* ChatClient */,
@@ -143,8 +176,84 @@
 			isa = PBXGroup;
 			children = (
 				D6DBE8212AFD111F00EAC47A /* StreamChatFactory.swift */,
+				D6DBE8412AFD307200EAC47A /* GrenadineViewModelFactory.swift */,
+				D6DBE8432AFD32CF00EAC47A /* StreamViewFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		D6DBE8302AFD261B00EAC47A /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE83E2AFD2F1400EAC47A /* TabBar */,
+				D6DBE8312AFD262500EAC47A /* Chats */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		D6DBE8312AFD262500EAC47A /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE83D2AFD2EC000EAC47A /* View */,
+				D6DBE8322AFD262F00EAC47A /* ViewModel */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		D6DBE8322AFD262F00EAC47A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE8332AFD263C00EAC47A /* StreamViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6DBE8352AFD265B00EAC47A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE8362AFD266B00EAC47A /* FileManager+Adds.swift */,
+				D6DBE8382AFD26ED00EAC47A /* Collections+Safe.swift */,
+				D6DBE8542AFD3F1300EAC47A /* Date+Adds.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6DBE83A2AFD273800EAC47A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE83B2AFD274300EAC47A /* FileExtensionKind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D6DBE83D2AFD2EC000EAC47A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE83F2AFD2F7400EAC47A /* ChannelListView.swift */,
+				D6DBE8482AFD356000EAC47A /* SearchUsersView.swift */,
+				D6DBE84A2AFD35A000EAC47A /* CreateNewGroupView.swift */,
+				D6DBE84C2AFD360800EAC47A /* NewGroupListView.swift */,
+				D6DBE84E2AFD39A500EAC47A /* CreateNewGroupHeader.swift */,
+				D6DBE8502AFD39FE00EAC47A /* DirectChatChannelView.swift */,
+				D6DBE8522AFD3ED500EAC47A /* SearchUsersResultsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6DBE83E2AFD2F1400EAC47A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D6ACFD432AFBFB5E0055F639 /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D6DBE8452AFD33BB00EAC47A /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBE8462AFD33C300EAC47A /* CircleImageModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,13 +340,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6DBE8202AFD0EA300EAC47A /* AppConfigurator.swift in Sources */,
+				D6DBE83C2AFD274300EAC47A /* FileExtensionKind.swift in Sources */,
+				D6DBE8402AFD2F7400EAC47A /* ChannelListView.swift in Sources */,
 				D6DBE82C2AFD186100EAC47A /* ChatClient+User.swift in Sources */,
 				D6DBE81B2AFD0C7A00EAC47A /* AppDelegate.swift in Sources */,
+				D6DBE8492AFD356000EAC47A /* SearchUsersView.swift in Sources */,
+				D6DBE8472AFD33C300EAC47A /* CircleImageModifier.swift in Sources */,
+				D6DBE8392AFD26ED00EAC47A /* Collections+Safe.swift in Sources */,
+				D6DBE8552AFD3F1300EAC47A /* Date+Adds.swift in Sources */,
 				D6DBE8242AFD144E00EAC47A /* AuthManager.swift in Sources */,
+				D6DBE8532AFD3ED500EAC47A /* SearchUsersResultsView.swift in Sources */,
+				D6DBE8342AFD263C00EAC47A /* StreamViewModel.swift in Sources */,
+				D6DBE8442AFD32CF00EAC47A /* StreamViewFactory.swift in Sources */,
 				D6DBE8222AFD111F00EAC47A /* StreamChatFactory.swift in Sources */,
-				D6ACFD442AFBFB5E0055F639 /* ContentView.swift in Sources */,
+				D6ACFD442AFBFB5E0055F639 /* TabBarView.swift in Sources */,
+				D6DBE8372AFD266B00EAC47A /* FileManager+Adds.swift in Sources */,
 				D6ACFD422AFBFB5E0055F639 /* GrenadineChatApp.swift in Sources */,
+				D6DBE84B2AFD35A000EAC47A /* CreateNewGroupView.swift in Sources */,
+				D6DBE8512AFD39FE00EAC47A /* DirectChatChannelView.swift in Sources */,
+				D6DBE84F2AFD39A500EAC47A /* CreateNewGroupHeader.swift in Sources */,
 				D6DBE81E2AFD0DEB00EAC47A /* ChatClient+shared.swift in Sources */,
+				D6DBE84D2AFD360800EAC47A /* NewGroupListView.swift in Sources */,
+				D6DBE8422AFD307200EAC47A /* GrenadineViewModelFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

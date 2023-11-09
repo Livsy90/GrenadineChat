@@ -18,7 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         AppConfigurator.configure()
-        streamChat = StreamChatFactory.streamChat()
+        streamChat = StreamChatFactory.makeStreamChat()
         ChatClient.shared.connectUser()
         
         return true
