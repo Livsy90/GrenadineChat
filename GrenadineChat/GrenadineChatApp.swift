@@ -16,6 +16,8 @@ struct GrenadineChatApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarView()
+                .environmentObject(streamViewModel)
+                .preferredColorScheme(streamViewModel.userPrefersDarkMode ? .dark : .light)
         }
     }
 }
