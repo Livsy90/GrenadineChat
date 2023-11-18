@@ -50,16 +50,15 @@ struct CreateNewGroupView: View {
                 streamViewModel.searchResults = []
                 streamViewModel.newGroupName = ""
                 streamViewModel.newGroupUsers = []
-            }
-            .onChange(of: streamViewModel.searchText) { newValue in
+            }.onChange(of: streamViewModel.searchText, { _, newValue in
                 if !newValue.isEmpty {
                     streamViewModel.searchUsers(searchText: newValue)
                 }
-            }
+            })
             .fullScreenCover(isPresented: $streamViewModel.isShowSelectedChannel) {
                 DirectChatChannelView()
         }
-        .background(Color("ListBackground"))
+            .background(Color(.lightGray))
         .alert("ERROR CREATING NEW GROUP...", isPresented: $streamViewModel.hasError) {
             Button("OK") { }
         } message: {
